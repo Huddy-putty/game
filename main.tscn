@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqv0hojcqgehx"]
+[gd_scene load_steps=4 format=3 uid="uid://bqv0hojcqgehx"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_vx8sf"]
 [ext_resource type="Script" path="res://dealing_screen.gd" id="2_lonmg"]
 [ext_resource type="Script" path="res://player_hand.gd" id="3_jov3n"]
-[ext_resource type="PackedScene" uid="uid://d26x53gsg43n2" path="res://card.tscn" id="4_i86ij"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_vx8sf")
@@ -161,44 +160,6 @@ offset_bottom = 40.0
 [node name="HBoxContainer" type="HBoxContainer" parent="GaemScreen/PlayerHand/CenterContainer"]
 layout_mode = 2
 
-[node name="Card01" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-layout_mode = 2
-
-[node name="Card02" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-layout_mode = 2
-
-[node name="Card03" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card04" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card05" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card06" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card07" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card08" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card09" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card10" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
 [node name="DealerHand" type="Control" parent="GaemScreen"]
 anchors_preset = 0
 offset_left = 67.415
@@ -213,45 +174,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="GaemScreen/DealerHand/CenterContainer"]
-layout_mode = 2
-
-[node name="Card01" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-layout_mode = 2
-
-[node name="Card02" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card03" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card04" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card05" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card06" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card07" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card08" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card09" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
-layout_mode = 2
-
-[node name="Card10" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
-visible = false
 layout_mode = 2
 
 [connection signal="cards_dealt" from="DealingScreen" to="." method="_on_dealing_screen_cards_dealt"]

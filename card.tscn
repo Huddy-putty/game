@@ -70,11 +70,13 @@ backs = Array[Texture2D]([ExtResource("2_7p6xm"), ExtResource("1_sb03u"), ExtRes
 fronts = Array[Texture2D]([ExtResource("6_ekhrt"), ExtResource("7_0ftin"), ExtResource("8_2gql3"), ExtResource("9_p7csk"), ExtResource("10_hbrn6"), ExtResource("11_fqkra"), ExtResource("12_uew05"), ExtResource("13_stird"), ExtResource("14_m0xrc"), ExtResource("15_xd6hs"), ExtResource("16_ep77b"), ExtResource("17_im4pv"), ExtResource("18_hnagl"), ExtResource("19_1ui33"), ExtResource("20_isk5a"), ExtResource("21_or0ad"), ExtResource("22_fkjmh"), ExtResource("23_4rlee"), ExtResource("24_51q00"), ExtResource("25_16uxu"), ExtResource("26_fx481"), ExtResource("27_0fy38"), ExtResource("28_x0eoj"), ExtResource("29_3wmi2"), ExtResource("30_i2442"), ExtResource("31_dudkj"), ExtResource("32_37iph"), ExtResource("33_20qhk"), ExtResource("34_o8sfi"), ExtResource("35_qgq2x"), ExtResource("36_osr83"), ExtResource("37_nbdnv"), ExtResource("38_wcsuc"), ExtResource("39_fybef"), ExtResource("40_xm7tk"), ExtResource("41_bro14"), ExtResource("42_sr2hk"), ExtResource("43_7ilgj"), ExtResource("44_20kkc"), ExtResource("45_1ctr8"), ExtResource("46_xhchn"), ExtResource("47_qlgwn"), ExtResource("48_4226o"), ExtResource("49_kvle7"), ExtResource("50_8hw0n"), ExtResource("51_u28xg"), ExtResource("52_x8pa5"), ExtResource("53_h7xs4"), ExtResource("54_cwygk"), ExtResource("55_ohgmy"), ExtResource("56_ek127"), ExtResource("57_bhnt7")])
 
 [node name="Back" type="TextureRect" parent="."]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_sb03u")
 
 [node name="Front" type="TextureRect" parent="."]
+layout_mode = 0
 offset_right = 96.0
 offset_bottom = 144.0
 texture = ExtResource("2_1j01t")

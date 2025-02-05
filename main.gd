@@ -27,17 +27,20 @@ func _on_dealing_screen_cards_dealt() -> void:
 	$GaemScreen.visible = true
 	#$DealingScreen/PlayersCards.add_child(card_scene.instantiate())
 	#var dealers_cards = card_scene.instantiate()
-	var last_card = null
-	var playercard01 = $GaemScreen/PlayerHand/CenterContainer/HBoxContainer/Card01
-	last_card = cards.pop_back()
-	playercard01.set_front(last_card.n, last_card.f)
-	var playercard02 = $GaemScreen/PlayerHand/CenterContainer/HBoxContainer/Card02
-	last_card = cards.pop_back()
-	playercard02.set_front(last_card.n, last_card.f)
-	var dealercard01 = $GaemScreen/DealerHand/CenterContainer/HBoxContainer/Card01
-	last_card = cards.pop_back()
-	dealercard01.set_front(last_card.n, last_card.f)
-	
+	#var last_card = null
+	#var playercard01 = $GaemScreen/PlayerHand/CenterContainer/HBoxContainer/Card01
+	#last_card = cards.pop_back()
+	#playercard01.set_front(last_card.n, last_card.f)
+	#var playercard02 = $GaemScreen/PlayerHand/CenterContainer/HBoxContainer/Card02
+	#last_card = cards.pop_back()
+	#playercard02.set_front(last_card.n, last_card.f)
+	#var dealercard01 = $GaemScreen/DealerHand/CenterContainer/HBoxContainer/Card01
+	#last_card = cards.pop_back()
+	#dealercard01.set_front(last_card.n, last_card.f)
+	var card=card_scene.instantiate()
+	var card_value=cards.pop_back()
+	card.set_front(card_value.n,card_value.f)
+	$DealingScreen/PlayersCards.add_child(card)
 	#card01.set_front("1", "clubs")
 	
 	print(cards)
