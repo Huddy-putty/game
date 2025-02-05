@@ -12,5 +12,6 @@ upload
 3. git status
 4. git commit -m "here is a messAGE" of what you changed
 5. git push
+
 download
 1.  git pull
