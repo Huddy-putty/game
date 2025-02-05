@@ -1,0 +1,80 @@
+[gd_scene load_steps=59 format=3 uid="uid://d26x53gsg43n2"]
+
+[ext_resource type="Script" path="res://card.gd" id="1_4yj52"]
+[ext_resource type="Texture2D" uid="uid://bp0rqjqxh2mb3" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-back2.png" id="1_sb03u"]
+[ext_resource type="Texture2D" uid="uid://di8ufa65beqar" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-blank.png" id="2_1j01t"]
+[ext_resource type="Texture2D" uid="uid://bl2dihxn08mhy" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-back1.png" id="2_7p6xm"]
+[ext_resource type="Texture2D" uid="uid://dulvhy83rnw4i" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-back3.png" id="4_ps0yn"]
+[ext_resource type="Texture2D" uid="uid://cyuh80vpbbgwk" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-back4.png" id="5_6pjv4"]
+[ext_resource type="Texture2D" uid="uid://bgt3p4k7sj30w" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-1.png" id="6_ekhrt"]
+[ext_resource type="Texture2D" uid="uid://d3qy25krtctw1" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-2.png" id="7_0ftin"]
+[ext_resource type="Texture2D" uid="uid://cucu1b0xyakdq" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-3.png" id="8_2gql3"]
+[ext_resource type="Texture2D" uid="uid://db8tvty14oypn" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-4.png" id="9_p7csk"]
+[ext_resource type="Texture2D" uid="uid://dnfe56r22ebjp" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-5.png" id="10_hbrn6"]
+[ext_resource type="Texture2D" uid="uid://dg8xqan76gaxu" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-6.png" id="11_fqkra"]
+[ext_resource type="Texture2D" uid="uid://dhxibnldd3xlu" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-7.png" id="12_uew05"]
+[ext_resource type="Texture2D" uid="uid://03qfdk50qx50" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-8.png" id="13_stird"]
+[ext_resource type="Texture2D" uid="uid://b8kwioimfuwwp" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-9.png" id="14_m0xrc"]
+[ext_resource type="Texture2D" uid="uid://dvb23vjeckpe" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-10.png" id="15_xd6hs"]
+[ext_resource type="Texture2D" uid="uid://xp5agdy8a87e" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-11.png" id="16_ep77b"]
+[ext_resource type="Texture2D" uid="uid://p13fsghqrqpo" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-12.png" id="17_im4pv"]
+[ext_resource type="Texture2D" uid="uid://dhsj5wkrdds2b" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-clubs-13.png" id="18_hnagl"]
+[ext_resource type="Texture2D" uid="uid://b3fmn2765psr8" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-1.png" id="19_1ui33"]
+[ext_resource type="Texture2D" uid="uid://cxn5navo0qecx" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-2.png" id="20_isk5a"]
+[ext_resource type="Texture2D" uid="uid://cdfsmyrv1vjha" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-3.png" id="21_or0ad"]
+[ext_resource type="Texture2D" uid="uid://cq5v1uoi352ks" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-4.png" id="22_fkjmh"]
+[ext_resource type="Texture2D" uid="uid://ch57x7cvtkwrh" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-5.png" id="23_4rlee"]
+[ext_resource type="Texture2D" uid="uid://dcq115y4ljo1i" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-6.png" id="24_51q00"]
+[ext_resource type="Texture2D" uid="uid://bla67urslv1xg" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-7.png" id="25_16uxu"]
+[ext_resource type="Texture2D" uid="uid://dnbcwk4m702bc" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-8.png" id="26_fx481"]
+[ext_resource type="Texture2D" uid="uid://guau84wsbccc" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-9.png" id="27_0fy38"]
+[ext_resource type="Texture2D" uid="uid://bggrsfdlb4vpx" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-10.png" id="28_x0eoj"]
+[ext_resource type="Texture2D" uid="uid://jr3leh68p6tg" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-11.png" id="29_3wmi2"]
+[ext_resource type="Texture2D" uid="uid://co3b87tnhvn56" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-12.png" id="30_i2442"]
+[ext_resource type="Texture2D" uid="uid://plaver1levip" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-diamonds-13.png" id="31_dudkj"]
+[ext_resource type="Texture2D" uid="uid://br52swq3v1oti" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-1.png" id="32_37iph"]
+[ext_resource type="Texture2D" uid="uid://c1nuy0t05wgy" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-2.png" id="33_20qhk"]
+[ext_resource type="Texture2D" uid="uid://chek77m8gpcfn" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-3.png" id="34_o8sfi"]
+[ext_resource type="Texture2D" uid="uid://dd7kqvvukwivp" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-4.png" id="35_qgq2x"]
+[ext_resource type="Texture2D" uid="uid://d2cvtqcp73slf" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-5.png" id="36_osr83"]
+[ext_resource type="Texture2D" uid="uid://chs3ybqx53kev" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-6.png" id="37_nbdnv"]
+[ext_resource type="Texture2D" uid="uid://crd5axg4mipa7" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-7.png" id="38_wcsuc"]
+[ext_resource type="Texture2D" uid="uid://62idloagrn25" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-8.png" id="39_fybef"]
+[ext_resource type="Texture2D" uid="uid://bbusbewpomytj" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-9.png" id="40_xm7tk"]
+[ext_resource type="Texture2D" uid="uid://yys28o4jigmd" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-10.png" id="41_bro14"]
+[ext_resource type="Texture2D" uid="uid://5uvaoo045tky" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-11.png" id="42_sr2hk"]
+[ext_resource type="Texture2D" uid="uid://dkyqscs8mqdxu" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-12.png" id="43_7ilgj"]
+[ext_resource type="Texture2D" uid="uid://cwtqo1hqqhw85" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-hearts-13.png" id="44_20kkc"]
+[ext_resource type="Texture2D" uid="uid://bh5gb7bg6ycsp" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-1.png" id="45_1ctr8"]
+[ext_resource type="Texture2D" uid="uid://b3gmef5xoj1on" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-2.png" id="46_xhchn"]
+[ext_resource type="Texture2D" uid="uid://cc1blaipetjq5" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-3.png" id="47_qlgwn"]
+[ext_resource type="Texture2D" uid="uid://sb2ocxvm65i6" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-4.png" id="48_4226o"]
+[ext_resource type="Texture2D" uid="uid://cykx4ubctlhe5" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-5.png" id="49_kvle7"]
+[ext_resource type="Texture2D" uid="uid://c7fhwf5nktn8b" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-6.png" id="50_8hw0n"]
+[ext_resource type="Texture2D" uid="uid://due56xseg5l64" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-7.png" id="51_u28xg"]
+[ext_resource type="Texture2D" uid="uid://rj1ngcrj6x4i" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-8.png" id="52_x8pa5"]
+[ext_resource type="Texture2D" uid="uid://c1wf33o1marxu" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-9.png" id="53_h7xs4"]
+[ext_resource type="Texture2D" uid="uid://5wngu16k228f" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-10.png" id="54_cwygk"]
+[ext_resource type="Texture2D" uid="uid://bm6wjrqlm506y" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-11.png" id="55_ohgmy"]
+[ext_resource type="Texture2D" uid="uid://ca4l36nlt6v3h" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-12.png" id="56_ek127"]
+[ext_resource type="Texture2D" uid="uid://colkpyousng3g" path="res://art/Pixel Fantasy Playing Cards/Playing Cards/card-spades-13.png" id="57_bhnt7"]
+
+[node name="Card" type="Control"]
+layout_mode = 3
+anchor_right = 0.082
+anchor_bottom = 0.222
+offset_right = -94.464
+offset_bottom = -143.856
+script = ExtResource("1_4yj52")
+backs = Array[Texture2D]([ExtResource("2_7p6xm"), ExtResource("1_sb03u"), ExtResource("4_ps0yn"), ExtResource("5_6pjv4")])
+fronts = Array[Texture2D]([ExtResource("6_ekhrt"), ExtResource("7_0ftin"), ExtResource("8_2gql3"), ExtResource("9_p7csk"), ExtResource("10_hbrn6"), ExtResource("11_fqkra"), ExtResource("12_uew05"), ExtResource("13_stird"), ExtResource("14_m0xrc"), ExtResource("15_xd6hs"), ExtResource("16_ep77b"), ExtResource("17_im4pv"), ExtResource("18_hnagl"), ExtResource("19_1ui33"), ExtResource("20_isk5a"), ExtResource("21_or0ad"), ExtResource("22_fkjmh"), ExtResource("23_4rlee"), ExtResource("24_51q00"), ExtResource("25_16uxu"), ExtResource("26_fx481"), ExtResource("27_0fy38"), ExtResource("28_x0eoj"), ExtResource("29_3wmi2"), ExtResource("30_i2442"), ExtResource("31_dudkj"), ExtResource("32_37iph"), ExtResource("33_20qhk"), ExtResource("34_o8sfi"), ExtResource("35_qgq2x"), ExtResource("36_osr83"), ExtResource("37_nbdnv"), ExtResource("38_wcsuc"), ExtResource("39_fybef"), ExtResource("40_xm7tk"), ExtResource("41_bro14"), ExtResource("42_sr2hk"), ExtResource("43_7ilgj"), ExtResource("44_20kkc"), ExtResource("45_1ctr8"), ExtResource("46_xhchn"), ExtResource("47_qlgwn"), ExtResource("48_4226o"), ExtResource("49_kvle7"), ExtResource("50_8hw0n"), ExtResource("51_u28xg"), ExtResource("52_x8pa5"), ExtResource("53_h7xs4"), ExtResource("54_cwygk"), ExtResource("55_ohgmy"), ExtResource("56_ek127"), ExtResource("57_bhnt7")])
+
+[node name="Back" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_sb03u")
+
+[node name="Front" type="TextureRect" parent="."]
+offset_right = 96.0
+offset_bottom = 144.0
+texture = ExtResource("2_1j01t")

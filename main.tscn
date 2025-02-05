@@ -1,0 +1,265 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqv0hojcqgehx"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_vx8sf"]
+[ext_resource type="Script" path="res://dealing_screen.gd" id="2_lonmg"]
+[ext_resource type="Script" path="res://player_hand.gd" id="3_jov3n"]
+[ext_resource type="PackedScene" uid="uid://d26x53gsg43n2" path="res://card.tscn" id="4_i86ij"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_vx8sf")
+
+[node name="DealingScreen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_lonmg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DealingScreen"]
+layout_mode = 0
+offset_right = 245.0
+offset_bottom = 382.0
+
+[node name="MOOLAH" type="Label" parent="DealingScreen/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Bank
+2000
+"
+
+[node name="GridContainer" type="GridContainer" parent="DealingScreen/VBoxContainer"]
+layout_mode = 2
+columns = 3
+
+[node name="Value1000" type="Button" parent="DealingScreen/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "1000"
+
+[node name="Value500" type="Button" parent="DealingScreen/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "500"
+
+[node name="Value100" type="Button" parent="DealingScreen/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "100"
+
+[node name="Label" type="Label" parent="DealingScreen/VBoxContainer/GridContainer/Value100"]
+layout_mode = 0
+offset_left = -53.0
+offset_top = -193.0
+offset_right = -13.0
+offset_bottom = -170.0
+text = "100"
+
+[node name="Value50" type="Button" parent="DealingScreen/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "50"
+
+[node name="Value10" type="Button" parent="DealingScreen/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "10"
+
+[node name="Value5" type="Button" parent="DealingScreen/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "5"
+
+[node name="Value1" type="Button" parent="DealingScreen/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="DealButton" type="Button" parent="DealingScreen"]
+layout_mode = 0
+offset_left = 649.0
+offset_top = 309.0
+offset_right = 809.0
+offset_bottom = 413.0
+theme_override_font_sizes/font_size = 70
+text = "Deal"
+
+[node name="GaemScreen" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Hit" type="Button" parent="GaemScreen"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 3.0
+offset_right = 113.0
+offset_bottom = 34.0
+text = "HIT"
+
+[node name="Stand" type="Button" parent="GaemScreen"]
+layout_mode = 0
+offset_right = 61.0
+offset_bottom = 31.0
+text = "STAND"
+
+[node name="Dealer" type="Control" parent="GaemScreen"]
+layout_mode = 1
+anchor_right = 3.129
+anchor_bottom = 1.75
+offset_left = 132.0
+offset_top = 114.0
+offset_right = 46.84
+offset_bottom = 84.0
+metadata/_edit_group_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GaemScreen/Dealer"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Score" type="Label" parent="GaemScreen/Dealer/HBoxContainer"]
+layout_mode = 2
+text = "21"
+
+[node name="Label" type="Label" parent="GaemScreen/Dealer/HBoxContainer"]
+layout_mode = 2
+text = "Dealer"
+
+[node name="Player" type="Control" parent="GaemScreen"]
+layout_mode = 1
+anchor_right = 3.129
+anchor_bottom = 1.75
+offset_left = 391.0
+offset_top = 72.0
+offset_right = 305.84
+offset_bottom = 42.0
+metadata/_edit_group_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GaemScreen/Player"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Score" type="Label" parent="GaemScreen/Player/HBoxContainer"]
+layout_mode = 2
+text = "21"
+
+[node name="Label" type="Label" parent="GaemScreen/Player/HBoxContainer"]
+layout_mode = 2
+text = "Player
+"
+
+[node name="PlayerHand" type="Control" parent="GaemScreen"]
+anchors_preset = 0
+offset_left = 64.0
+offset_top = 454.0
+offset_right = 104.0
+offset_bottom = 494.0
+script = ExtResource("3_jov3n")
+metadata/_edit_group_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="GaemScreen/PlayerHand"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GaemScreen/PlayerHand/CenterContainer"]
+layout_mode = 2
+
+[node name="Card01" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+layout_mode = 2
+
+[node name="Card02" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+layout_mode = 2
+
+[node name="Card03" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card04" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card05" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card06" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card07" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card08" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card09" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card10" parent="GaemScreen/PlayerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="DealerHand" type="Control" parent="GaemScreen"]
+anchors_preset = 0
+offset_left = 67.415
+offset_top = 51.135
+offset_right = 67.415
+offset_bottom = 51.135
+metadata/_edit_group_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="GaemScreen/DealerHand"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GaemScreen/DealerHand/CenterContainer"]
+layout_mode = 2
+
+[node name="Card01" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+layout_mode = 2
+
+[node name="Card02" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card03" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card04" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card05" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card06" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card07" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card08" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card09" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[node name="Card10" parent="GaemScreen/DealerHand/CenterContainer/HBoxContainer" instance=ExtResource("4_i86ij")]
+visible = false
+layout_mode = 2
+
+[connection signal="cards_dealt" from="DealingScreen" to="." method="_on_dealing_screen_cards_dealt"]
+[connection signal="pressed" from="DealingScreen/VBoxContainer/GridContainer/Value1000" to="." method="_on_value_1000_pressed"]
+[connection signal="pressed" from="DealingScreen/VBoxContainer/GridContainer/Value500" to="." method="_on_value_500_pressed"]
+[connection signal="pressed" from="DealingScreen/VBoxContainer/GridContainer/Value100" to="." method="_on_value_100_pressed"]
+[connection signal="pressed" from="DealingScreen/VBoxContainer/GridContainer/Value50" to="." method="_on_value_50_pressed"]
+[connection signal="pressed" from="DealingScreen/VBoxContainer/GridContainer/Value10" to="." method="_on_value_10_pressed"]
+[connection signal="pressed" from="DealingScreen/VBoxContainer/GridContainer/Value5" to="." method="_on_value_5_pressed"]
+[connection signal="pressed" from="DealingScreen/VBoxContainer/GridContainer/Value1" to="." method="_on_value_1_pressed"]
+[connection signal="pressed" from="DealingScreen/DealButton" to="DealingScreen" method="_on_deal_button_pressed"]
