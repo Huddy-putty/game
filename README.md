@@ -15,3 +15,7 @@ upload
 
 download
 1.  git pull
+
+# My other project
+
+https://wormhole.app/RO12eq#ubSDqrQaYIOF3Kt2lMH-5w
